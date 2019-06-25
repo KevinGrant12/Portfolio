@@ -1,0 +1,15 @@
+.Nav {
+  display: flex;
+  background: var(--yellow);
+  
+}
+
+.Nav-link {
+  color: var(--turq);
+  font-size: 2rem;
+  padding: var(--small);
+}
+
+.Nav-link.active {
+  color: var(--pink);
+}
