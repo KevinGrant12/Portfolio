@@ -1,15 +1,37 @@
 .Nav {
+  position: absolute;
+  bottom: 0;
   display: flex;
   background: var(--yellow);
-  
+  width: 100%;
+  transform: translateY(100%)
+}
+
+.Nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: fixNavTop .5s ease 1 forwards;
+  bottom: unset;
 }
 
 .Nav-link {
   color: var(--turq);
   font-size: 2rem;
   padding: var(--small);
+  cursor: pointer;
 }
 
+.Nav-link:hover,
 .Nav-link.active {
   color: var(--pink);
+}
+
+@keyframes fixNavTop {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

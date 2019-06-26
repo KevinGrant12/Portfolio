@@ -1,9 +1,13 @@
 .Hero {
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   background: var(--turq);
   height: 100vh;
-  overflow: hidden;
+}
+
+.Hero h1 {
+  color: white;
 }

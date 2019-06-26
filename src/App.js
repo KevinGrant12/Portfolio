@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="App">
       <Hero/>
-      <Nav />
       <About />
       <Projects />
       <Blog />
