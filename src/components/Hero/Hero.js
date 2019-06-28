@@ -4,7 +4,8 @@ import Nav from '../Nav/Nav'
 
 const Hero = () => (
   <section className="Hero">
-    <h1>Hey there, I'm Kevin Grant <br /> I'm a front-end web developer</h1>
+    <h1>Hello, I'm Kevin Grant</h1>
+    <h2>I'm a human & a front-end <span>web developer</span></h2>
     <button>Check out my work</button>
     <Nav />
   </section>
