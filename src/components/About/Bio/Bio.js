@@ -6,13 +6,14 @@ const Bio = () => (
   <section className="Bio">
   <div className="Bio-img-wrap">
       <div className="Bio-img-wrap__ring ring-yellow"></div>
-      <div className="Bio-img-wrap__ring ring-turq">
-        <p>Turq Ring</p>
+      <div className="Bio-img-wrap__ring ring-turq"></div>
+      <div className="Bio-img-wrap__ring ring-pink"></div>
+      <div className="Bio-img-wrap__ring ring-clear"></div>
+      <div className="Bio-img-wrap__ring text-ring">
+        <p>First Text Ring</p>
       </div>
-      <div className="Bio-img-wrap__ring ring-pink">
-      </div>
-      <div className="Bio-img-wrap__ring ring-clear">
-        <p>Clear Ring</p>
+      <div className="Bio-img-wrap__ring text-ring">
+        <p>Second Text Ring</p>
       </div>
       <img src={portrait} alt=""/>
     </div>

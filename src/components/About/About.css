@@ -15,13 +15,14 @@
   transform: translateX(-20%);
 }
 
+.About-shape .cls-1 {
+  fill: var(--yellow);
+}
+
 .About-child-wrap {
   display: flex;
   align-items: center;
-}
-
-.About-child-wrap > * {
-  width: 50%;
+  padding: 8rem var(--xlarge);
 }
 
 @media (max-width: 991px) {

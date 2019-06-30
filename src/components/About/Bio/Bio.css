@@ -1,4 +1,6 @@
 .Bio {
+  flex: 1;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +11,7 @@
   position: relative;
   width: 300px;
   height: 300px;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .Bio-img-wrap__ring {
@@ -25,7 +27,7 @@
 /* Yellow Ring */
 .Bio-img-wrap__ring.ring-yellow {
   border: 6px solid var(--pink);
-  animation: rotateYellow 90s infinite alternate;
+  animation: rotateYellow 90s linear infinite alternate;
   opacity: 0.5;
 }
 
@@ -89,7 +91,7 @@
 /* Pink Ring */
 .Bio-img-wrap__ring.ring-pink {
   border: 2px solid var(--pink);
-  transform: translate(-2px, -2px) scale(1.2) rotate(25deg);
+  animation: rotatePink 120s linear infinite alternate;
 }
 
 .Bio-img-wrap__ring.ring-pink:before {
@@ -114,17 +116,18 @@
   border-bottom: 2px solid var(--pink);
 }
 
-.Bio-img-wrap__ring.ring-pink p {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  color: var(--pink);
-  transform: translate(130%, -160%);
+@keyframes rotatePink {
+  from {
+    transform: translate(-2px, -2px) scale(1.2) rotate(25deg);
+  }
+  to {
+    transform: translate(-2px, -2px) scale(1.2) rotate(160deg);
+  }
 }
 
 /* Clear Ring */
 .Bio-img-wrap__ring.ring-clear {
-  transform: scale(1.2) rotate(10deg);
+  animation: rotateClear 180s linear infinite forwards;
 }
 .Bio-img-wrap__ring.ring-clear p {
   position: absolute;
@@ -158,6 +161,15 @@
   border-radius: 50%;
 }
 
+@keyframes rotateClear {
+  from {
+    transform: scale(1.2) rotate(0deg);
+  }
+  to {
+    transform: scale(1.2) rotate(-360deg);
+  }
+}
+
 .Bio-img-wrap img {
   position: relative;
   display: flex;
@@ -171,5 +183,11 @@
 
 .Bio > p {
   position: relative;
-  max-width: 70%;
+  max-width: 80%;
+}
+
+@media (max-width: 991px) {
+  .Bio {
+    padding:  0 4rem 4rem;
+  }
 }

@@ -1,3 +1,26 @@
 .Blog {
   padding: 10rem 0;
+  background: var(--turq);
+}
+
+.Blog-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  transform: translate(-30%,10%);
+}
+
+.Blog-shape .cls-1 {
+  fill: var(--pink);
+}
+
+.Blog h1 {
+  position: relative;
+  color: white;
+}
+
+.Blog-blog-post-wrap {
+  display: flex;
+  justify-content: space-evenly;
 }

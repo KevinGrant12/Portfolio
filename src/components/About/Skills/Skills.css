@@ -1,8 +1,74 @@
 .Skills {
+  flex: 1;
+  flex-basis: 40%;
   display: flex;
-  align-items: center;
+  flex-flow: column;
+  list-style: none;
+  padding: 0 12rem;
+  margin: 0;
 }
 
-.Skills > * {
-  width: 50%;
+.Skills-skill {
+  margin-bottom: var(--medium);
+}
+
+.Skills-skill__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Skills-skill__header > * {
+  margin: 0 0 .5rem;
+}
+
+.Skills-skill__progress-bar {
+  position: relative;
+  width: 100%;
+  height: 1.4rem;
+  background: var(--greyLight);
+  border-radius: var(--small);
+  overflow: hidden;
+}
+
+.Skills-skill__progress-amount {
+  height: 100%;
+  background: var(--turq);
+  transform: translateX(-5%) skewX(-40deg);
+}
+
+.Skills-skill#html .Skills-skill__progress-amount {
+  width: 85%;
+}
+
+.Skills-skill#css .Skills-skill__progress-amount {
+  width: 85%;
+}
+
+.Skills-skill#javascript .Skills-skill__progress-amount {
+  width: 65%;
+}
+
+.Skills-skill#react .Skills-skill__progress-amount {
+  width: 55%;
+}
+
+.Skills-skill#design .Skills-skill__progress-amount {
+  width: 55%;
+}
+
+.Skills-skill#illustrator .Skills-skill__progress-amount {
+  width: 85%;
+}
+
+.Skills-skill#photoshop .Skills-skill__progress-amount {
+  width: 75%;
+}
+
+.Skills-skill#html .Skills-skill__progress-amount {
+  width: 85%;
+}
+
+.Skills-skill#html .Skills-skill__progress-amount {
+  width: 85%;
 }
