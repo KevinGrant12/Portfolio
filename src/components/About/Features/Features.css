@@ -1,0 +1,39 @@
+.Features {
+  list-style: none;
+  display: grid;
+  justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+.Features li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: var(--large);
+}
+
+.Features li h3 {
+  color: var(--turq);
+  font-size: var(--large);
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.Features li p {
+  color: grey;
+  font-size: 16px;
+  margin: 0;
+  line-height: 2.2rem;
+}
+
+@media (min-width: 768px) {
+  .Features {
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+
+@media (min-width: 992px) {
+  .Features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

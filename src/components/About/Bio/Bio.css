@@ -1,0 +1,175 @@
+.Bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.Bio-img-wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 4rem;
+}
+
+.Bio-img-wrap__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Yellow Ring */
+.Bio-img-wrap__ring.ring-yellow {
+  border: 6px solid var(--pink);
+  animation: rotateYellow 90s infinite alternate;
+  opacity: 0.5;
+}
+
+.Bio-img-wrap__ring.ring-yellow:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 200px;
+  width: 50px;
+  background: white;
+  transform: translateX(10px);
+}
+
+.Bio-img-wrap__ring.ring-yellow:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 200px;
+  width: 80px;
+  background: white;
+  transform: translate(-10px, 20px) rotate(90deg);
+}
+
+@keyframes rotateYellow {
+  from {
+    transform: translate(-6px,-6px) scale(1.25) rotate(0);
+  }
+  to {
+    transform: translate(-6px,-6px) scale(1.25) rotate(180deg);
+  }
+}
+
+/* Blue Ring */
+.Bio-img-wrap__ring.ring-turq {
+  border: 2px solid var(--turq);
+  transform: translate(-2px, -2px) scale(1.1) rotate(-30deg);
+}
+
+.Bio-img-wrap__ring.ring-turq:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 200px;
+  background: white;
+  transform: translate(-10px, -50%);
+  border-radius: 50%;
+}
+
+.Bio-img-wrap__ring.ring-turq p {
+  position: absolute;
+  color: var(--turq);
+  top: 50%;
+  right: 0;
+  transform: translate(150%,-50%);
+}
+
+/* Pink Ring */
+.Bio-img-wrap__ring.ring-pink {
+  border: 2px solid var(--pink);
+  transform: translate(-2px, -2px) scale(1.2) rotate(25deg);
+}
+
+.Bio-img-wrap__ring.ring-pink:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 5px;
+  height: 20px;
+  background: white;
+  transform: translateX(calc(100% - 2px));
+}
+
+.Bio-img-wrap__ring.ring-pink:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 30px;
+  height: 20px;
+  transform: translateX(calc(100% - 2px));
+  border-bottom: 2px solid var(--pink);
+}
+
+.Bio-img-wrap__ring.ring-pink p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: var(--pink);
+  transform: translate(130%, -160%);
+}
+
+/* Clear Ring */
+.Bio-img-wrap__ring.ring-clear {
+  transform: scale(1.2) rotate(10deg);
+}
+.Bio-img-wrap__ring.ring-clear p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: var(--pink);
+  transform: translateX(120%);
+}
+.Bio-img-wrap__ring.ring-clear:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-70%, -50%);
+  width: 1.5rem;
+  height: 5px;
+  background: white;
+  border: 2px solid var(--pink);
+}
+
+.Bio-img-wrap__ring.ring-clear:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-60%, 50%);
+  width: 7px;
+  height: 7px;
+  background: white;
+  border: 2px solid var(--turq);
+  border-radius: 50%;
+}
+
+.Bio-img-wrap img {
+  position: relative;
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  transform: translate(-2px, -2px);
+}
+
+.Bio > p {
+  position: relative;
+  max-width: 70%;
+}

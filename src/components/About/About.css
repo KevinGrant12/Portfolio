@@ -1,11 +1,10 @@
 .About {
-  padding: 10rem 0;
+  padding-top: 47px;
 }
 
 .About-header h1 {
   position: relative;
   color: var(--turq);
-  margin-bottom: 8rem;
 }
 
 .About-shape {
@@ -16,41 +15,20 @@
   transform: translateX(-20%);
 }
 
-ul.About-features {
-  list-style: none;
-  display: grid;
-  justify-content: space-evenly;
-}
-
-ul.About-features li {
+.About-child-wrap {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: var(--large);
+  align-items: center;
 }
 
-ul.About-features li h3 {
-  color: var(--turq);
-  font-size: var(--large);
-  font-weight: 600;
-  margin: 1rem 0;
+.About-child-wrap > * {
+  width: 50%;
 }
 
-ul.About-features li p {
-  color: grey;
-  font-size: 16px;
-  margin: 0;
-  line-height: 2.2rem;
-}
-
-@media (min-width: 768px) {
-  ul.About-features {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 991px) {
+  .About-child-wrap {
+    flex-direction: column;
   }
-} 
-
-@media (min-width: 992px) {
-  ul.About-features {
-    grid-template-columns: repeat(4, 1fr);
+  .About-child-wrap > * {
+    width: 100%;
   }
 }

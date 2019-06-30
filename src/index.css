@@ -1,4 +1,4 @@
-/* @import-normalize; */
+@import-normalize;
 
 html {
   font-size: 62.5%;
@@ -12,6 +12,18 @@ body {
     font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: var(--super);
+  margin: 8rem 0;
+}
+
+p {
+  font-size: 16px;
+  color: grey;
+  font-weight: 500;
 }
 
 code {
@@ -44,7 +56,6 @@ button:disabled {
   
   /* Breakpoints */
   --desktop: 45rem;
-
 }
 
 .container  {
@@ -59,9 +70,4 @@ button:disabled {
 
 .header {
   position: relative;
-}
-
-.header h1 {
-  font-weight: 700;
-  font-size: var(--super);
 }

@@ -1,0 +1,8 @@
+.Skills {
+  display: flex;
+  align-items: center;
+}
+
+.Skills > * {
+  width: 50%;
+}
