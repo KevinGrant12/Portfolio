@@ -1,0 +1,77 @@
+.Contact-form {
+  display: flex;
+  flex-flow: column;
+  width: 400px;
+}
+
+.Contact-form > div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: .75rem;
+}
+
+.Contact-form > div:before,
+.Contact-form > div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--yellow);
+  opacity: 0;
+}
+
+.Contact-form > div:hover:before,
+.Contact-form > div:hover:after {
+  transform: none;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.Contact-form > div:before {
+  transform: translateX(-600%);
+  left: 0;
+}
+
+.Contact-form > div:after {
+  transform: translateX(600%);
+  right: 0;
+}
+
+.Contact-form input,
+.Contact-form textarea {
+  font-family: Raleway;
+  color: white;
+  padding: .75rem var(--small);
+  border: none;
+  background: var(--turqDark);
+  width: 100%;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  outline: none;
+}
+
+.Contact-form input:focus,
+.Contact-form textarea:focus {
+  border-left: 3px solid var(--yellow);
+  border-right: 3px solid var(--yellow);
+}
+
+.Contact-form textarea {
+  height: 10rem;
+}
+
+.Contact-form button {
+  padding: .75rem var(--small);
+  background: var(--turq);
+  border: none;
+  color: white;
+  font-family: Raleway;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.Contact-form button:hover {
+  background: var(--turqDark);
+}

@@ -6,6 +6,11 @@
   justify-content: center;
   background: black;
   height: 100vh;
+  overflow: initial;
+}
+
+.Hero-logo {
+  margin-bottom: var(--large);
 }
 
 .Hero h1 {

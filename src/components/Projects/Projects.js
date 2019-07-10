@@ -4,11 +4,11 @@ import './Projects.css';
 
 // <Shape className="About-shape" />
 const Projects = () => (
-  <div className="Projects">
+  <section className="Projects">
     <div className="Projects-header header">
       <h1>Projects</h1>
     </div>
-  </div>
+  </section>
 );
 
 export default Projects;
