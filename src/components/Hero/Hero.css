@@ -25,7 +25,7 @@
   font-size: var(--large);
   font-size: 30px;
   font-weight: 300;
-  margin: var(--small) 0;
+  margin: var(--small) 0 var(--xlarge);
 }
 
 .Hero h2 span {

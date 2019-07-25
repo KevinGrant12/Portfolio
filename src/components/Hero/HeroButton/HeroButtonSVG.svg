@@ -1,0 +1,8 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 48">
+  <title>HeroButton</title>
+  <polygon className="pink" points="29 23 52 0 15 0 0 0 0 48 15 48 54 48 29 23" fill="#ed3e88"/>
+  <polygon className="yellow" points="97.5 40.5 114 24 96 24 96 0 52 0 29 23 54 48 82 48 82 40.5 97.5 40.5" fill="#fded52"/>
+  <polygon className="turq" points="155.5 19.5 175 0 116 0 96 0 96 24 114 24 97.5 40.5 82 40.5 82 48 116 48 156.5 48 185 19.5 155.5 19.5" fill="#17adcb"/>
+  <polygon className="beige" points="224.5 33 224.5 13.5 238 0 189 0 175 0 155.5 19.5 185 19.5 156.5 48 189 48 239.5 48 224.5 33" fill="#ffffc7"/>
+  <polygon className="turq2" points="243 0 238 0 224.5 13.5 224.5 33 239.5 48 243 48 270 48 270 0 243 0" fill="#17adcb"/>
+</svg>
