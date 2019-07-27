@@ -9,7 +9,7 @@ export default class HeroButton extends React.Component {
     this.state = {
       translate: "translateX(100%)",
       opacity: 1,
-      initial: true
+      first: true
     }
   };
   componentDidMount() {
@@ -23,26 +23,45 @@ export default class HeroButton extends React.Component {
     });
   };
   handleMouseEnter = (e) => {
-    this.updatePolygons(e)
-    this.setState({
-      translate: "translateX(-100%)",
-      opacity: 0
-    });
-  };
-  handleMouseLeave = (e, prevState) => {
-    this.updatePolygons(e)
-    this.setState(prevState => ({
-      translate: "translateX(100%)",
-      initial: !prevState.initial
-    }))
-  };
-  updatePolygons = (e) => {
     const polygons = [...e.target.children];
     polygons.forEach(child => {
       child.style.transform = this.state.translate;
       child.style.opacity = this.state.opacity;
     });
-    console.log({polygons})
+    this.setState({
+      translate: "translateX(-100%)",
+      opacity: 0
+    }, () => {
+    });
+  };
+  handleMouseLeave = (e) => {
+    const polygons = [...e.target.children];
+    this.updatePolygons(e, polygons)
+    setTimeout(() => {
+      this.setState({
+        translate: "translateX(100%)"
+      }, () => {
+        this.updatePolygons(e, polygons);
+      });
+    }, 750)
+  };
+  updatePolygons = (e, polygons) => {
+    if (this.state.first) {
+      polygons.forEach(child => {
+        child.style.transform = this.state.translate;
+        child.style.opacity = this.state.opacity;
+      });
+      this.setState({ first: false })
+    } else {
+      polygons.forEach(child => {
+        child.style.transform = this.state.translate;
+      });
+      this.setState({
+        first: true,
+        translate: "none",
+        opacity: 1
+      });
+    };
   };
   render() {
     return(

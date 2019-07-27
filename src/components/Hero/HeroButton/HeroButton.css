@@ -16,8 +16,8 @@
 }
 
 .Hero button svg polygon {
-  /* transform: translateX(100%); */
   transition: all .3s ease;
+  pointer-events: none;
 }
 
 .Hero button svg polygon.yellow {
