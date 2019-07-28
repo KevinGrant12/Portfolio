@@ -20,14 +20,22 @@ export default class Projects extends React.Component {
         <div className="Projects-header header">
           <h1>Projects</h1>
         </div>
-        <ul>
-          <li>
-            <button onClick={this.handleClick} value="react"><i className="fab fa-react"></i> React</button>
-            <button onClick={this.handleClick} value="csharp">.NET/C#</button>
-            <button onClick={this.handleClick} value="python"><i className="fab fa-python"></i> Python</button>
-            <button onClick={this.handleClick} value="wordpress"><i className="fab fa-wordpress"></i> Wordpress</button>
-          </li>
-        </ul>
+        <div className="Projects-filter">
+          <ul>
+            <li>
+              <button onClick={this.handleClick} value="react"><i className="fab fa-react"></i> React</button>
+            </li>
+            <li>
+              <button onClick={this.handleClick} value="csharp">.NET/C#</button>
+            </li>
+            <li>
+              <button onClick={this.handleClick} value="python"><i className="fab fa-python"></i> Python</button>
+            </li>
+            <li>
+              <button onClick={this.handleClick} value="wordpress"><i className="fab fa-wordpress"></i> Wordpress</button>
+            </li>
+          </ul>
+        </div>
         {
           this.state.projects === "react" &&
           <div className="ReactProjects">

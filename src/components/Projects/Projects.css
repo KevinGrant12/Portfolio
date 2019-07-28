@@ -1,7 +1,64 @@
 .Projects {
-  background: var(--greyLight);
+  background: black;
 }
 
 .Projects-header h1 {
   color: var(--turq);
+}
+
+.Projects-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.Projects-filter ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.Projects-filter ul li {
+  padding: var(--medium);
+}
+
+.Projects-filter button {
+  background: none;
+  border: 1px solid white;
+  padding: var(--small) var(--xlarge);
+  color: white;
+  font-size: 18px;
+  transition: all .3s ease;
+}
+
+.Projects-filter button:hover {
+  animation: flicker .25s linear forwards;
+}
+
+@keyframes flicker {
+  10% {
+    background: rgba(237, 64, 136, 0.1);
+  }
+  15% {
+    background: rgba(237, 64, 136, 0);
+  }
+  20% {
+    background: rgba(237, 64, 136, 0.2);
+  }
+  25% {
+    background: rgba(237, 64, 136, 0);
+  }
+  40% {
+    background: rgba(237, 64, 136, 0.5);
+  }
+  60% {
+    background: rgba(237, 64, 136, 0.2);
+  }
+  80% {
+    background: rgba(237, 64, 136, 0.8);
+  }
+  90% {
+    background: rgba(237, 64, 136, 0.5);
+  }
+  100% {
+    background: rgba(237, 64, 136, 1);
+  }
 }
