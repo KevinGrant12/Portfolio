@@ -36,7 +36,7 @@ export default class HeroButton extends React.Component {
   };
   handleMouseLeave = (e) => {
     const polygons = [...e.target.children];
-    this.updatePolygons(e, polygons)
+    this.updatePolygons(e, polygons) 
     setTimeout(() => {
       this.setState({
         translate: "translateX(100%)"
