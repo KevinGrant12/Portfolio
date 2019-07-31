@@ -25,12 +25,6 @@ export default class Nav extends React.Component {
     const nav = document.getElementById('Nav');
     const navHeight = nav.offsetHeight;
     let isNavTop = document.documentElement.scrollTop < window.innerHeight + navHeight ? false : true;
-    
-
-    console.log(window.innerHeight)
-    console.log('doc scrollTop ' + document.documentElement.scrollTop);
-    console.log('calculation ' + (nav.offsetTop - document.documentElement.scrollTop + navHeight))
-    console.log('nav offsetTop ' + nav.offsetTop)
     if (isNavTop) {
       this.setState(() => ({ isNavTop : true }));
     } else {
@@ -51,12 +45,22 @@ export default class Nav extends React.Component {
   }
   render() {
     return(
-      <nav id="Nav" className="Nav" onScroll={this.onScroll}>
-        <div className="Nav-link active" onClick={this.handleNavItemClick}>home</div>
-        <div className="Nav-link" onClick={this.handleNavItemClick}>about</div>
-        <div className="Nav-link" onClick={this.handleNavItemClick}>projects</div>
-        <div className="Nav-link" onClick={this.handleNavItemClick}>blog</div>
-        <div className="Nav-link" onClick={this.handleNavItemClick}>contact</div>
+      <nav id="Nav" className="Nav">
+        <div className="Nav-link active" onClick={this.handleNavItemClick}>
+          <a href="#hero">home</a>
+        </div>
+        <div className="Nav-link" onClick={this.handleNavItemClick}>
+          <a href="#about">about</a>
+        </div>
+        <div className="Nav-link" onClick={this.handleNavItemClick}>
+          <a href="#projects">projects</a>
+        </div>
+        <div className="Nav-link" onClick={this.handleNavItemClick}>
+          <a href="#blog">blog</a>
+        </div>
+        <div className="Nav-link" onClick={this.handleNavItemClick}>
+          <a href="#contact">contact</a>
+        </div>
       </nav>
     );
   };

@@ -17,14 +17,19 @@
 }
 
 .Nav-link {
-  color: var(--turq);
-  font-size: 2rem;
-  padding: var(--small);
   cursor: pointer;
 }
 
-.Nav-link:hover,
-.Nav-link.active {
+.Nav-link a {
+  display: inline-flex;
+  color: var(--turq);
+  padding: var(--small);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.Nav-link:hover a,
+.Nav-link.active a {
   color: var(--pink);
 }
 

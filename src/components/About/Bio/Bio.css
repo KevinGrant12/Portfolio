@@ -27,7 +27,7 @@
 /* Yellow Ring */
 .Bio-img-wrap__ring.ring-yellow {
   border: 6px solid var(--pink);
-  animation: rotateYellow 90s linear infinite alternate;
+  animation: rotateYellow 30s linear infinite alternate;
   opacity: 0.5;
 }
 
@@ -91,7 +91,7 @@
 /* Pink Ring */
 .Bio-img-wrap__ring.ring-pink {
   border: 2px solid var(--pink);
-  animation: rotatePink 120s linear infinite alternate;
+  animation: rotatePink 15s linear infinite alternate;
 }
 
 .Bio-img-wrap__ring.ring-pink:before {
@@ -127,7 +127,7 @@
 
 /* Clear Ring */
 .Bio-img-wrap__ring.ring-clear {
-  animation: rotateClear 180s linear infinite forwards;
+  animation: rotateClear 120s linear infinite forwards;
 }
 .Bio-img-wrap__ring.ring-clear p {
   position: absolute;

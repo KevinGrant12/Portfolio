@@ -16,7 +16,7 @@ export default class Projects extends React.Component {
   };
   render() {
     return(
-      <section className="Projects">
+      <section className="Projects" id="projects">
         <div className="Projects-header header">
           <h1>Projects</h1>
         </div>

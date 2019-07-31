@@ -10,10 +10,12 @@
 }
 
 .Hero-logo {
+  position: relative;
   margin-bottom: var(--large);
 }
 
 .Hero h1 {
+  position: relative;
   color: white;
   font-size: var(--xlarge);
   font-weight: 500;
@@ -21,6 +23,7 @@
 }
 
 .Hero h2 {
+  position: relative;
   color: white;
   font-size: var(--large);
   font-size: 30px;

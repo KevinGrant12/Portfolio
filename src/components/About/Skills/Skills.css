@@ -34,6 +34,11 @@
 .Skills-skill__progress-amount {
   height: 100%;
   background: var(--turq);
+  transform: translateX(-110%) skewX(-40deg);
+  transition: all 1s ease;
+}
+
+.Skills.animated .Skills-skill__progress-amount {
   transform: translateX(-5%) skewX(-40deg);
 }
 
@@ -43,32 +48,30 @@
 
 .Skills-skill#css .Skills-skill__progress-amount {
   width: 85%;
+  transition-delay: 0.1s;
 }
 
 .Skills-skill#javascript .Skills-skill__progress-amount {
   width: 65%;
+  transition-delay: 0.2s;
 }
 
 .Skills-skill#react .Skills-skill__progress-amount {
   width: 55%;
+  transition-delay: 0.3s;
 }
 
 .Skills-skill#design .Skills-skill__progress-amount {
   width: 55%;
+  transition-delay: 0.4s;
 }
 
 .Skills-skill#illustrator .Skills-skill__progress-amount {
   width: 85%;
+  transition-delay: 0.5s;
 }
 
 .Skills-skill#photoshop .Skills-skill__progress-amount {
   width: 75%;
-}
-
-.Skills-skill#html .Skills-skill__progress-amount {
-  width: 85%;
-}
-
-.Skills-skill#html .Skills-skill__progress-amount {
-  width: 85%;
+  transition-delay: 0.6s;
 }

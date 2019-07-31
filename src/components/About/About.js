@@ -6,7 +6,7 @@ import Features from './Features/Features';
 import Skills from './Skills/Skills';
 
 const About = () => (
-  <section className="About">
+  <section className="About" id="about">
     <div className="About-header header">
       <Shape className="About-shape" />
       <h1>About</h1>
