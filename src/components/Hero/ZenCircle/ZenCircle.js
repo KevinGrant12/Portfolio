@@ -8,11 +8,11 @@ import zenFive from './zen-5.png';
 
 const ZenCircle = () => (
   <div className="ZenCircle">
-    <img src={zenOne} alt="zen circle"/>
-    <img src={zenTwo} alt="zen circle"/>
-    <img src={zenThree} alt="zen circle"/>
-    <img src={zenFour} alt="zen circle"/>
-    <img src={zenFive} alt="zen circle"/>
+    <img id="circleOne" src={zenOne} alt="zen circle"/>
+    <img id="circleTow" src={zenTwo} alt="zen circle"/>
+    <img id="circleThree" src={zenThree} alt="zen circle"/>
+    <img id="circleFour" src={zenFour} alt="zen circle"/>
+    <img id="circleFive" src={zenFive} alt="zen circle"/>
   </div>
 );
 

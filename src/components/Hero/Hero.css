@@ -12,6 +12,7 @@
 .Hero-logo {
   position: relative;
   margin-bottom: var(--large);
+  pointer-events: none;
 }
 
 .Hero h1 {
@@ -20,6 +21,7 @@
   font-size: var(--xlarge);
   font-weight: 500;
   margin: 0;
+  pointer-events: none;
 }
 
 .Hero h2 {
@@ -29,6 +31,7 @@
   font-size: 30px;
   font-weight: 300;
   margin: var(--small) 0 6rem;
+  pointer-events: none;
 }
 
 .Hero h2 span {
