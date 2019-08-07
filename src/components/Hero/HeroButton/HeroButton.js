@@ -66,12 +66,14 @@ export default class HeroButton extends React.Component {
   render() {
     return(
       <button>
-        <HeroButtonSVG
-          id="HeroButton"
-          onMouseEnter={this.handleMouseEnter}
-          onMouseLeave={this.handleMouseLeave}
-        />
-        <span>Check out my work<i className="fas fa-chevron-right"></i></span>
+        <a href="#about">
+          <HeroButtonSVG
+            id="HeroButton"
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+          />
+          <span>Check out my work<i className="fas fa-chevron-right"></i></span>
+        </a>
       </button>
     );
   };
