@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
               <button onClick={this.handleClick} value="react"><i className="fab fa-react"></i> React</button>
             </li>
             <li>
-              <button onClick={this.handleClick} value="csharp">.NET/C#</button>
+              <button onClick={this.handleClick} value="vue"><i class="fab fa-vuejs"></i> Vue</button>
             </li>
             <li>
               <button onClick={this.handleClick} value="python"><i className="fab fa-python"></i> Python</button>

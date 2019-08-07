@@ -17,7 +17,7 @@ const Bio = () => (
       </div>
       <img src={portrait} alt=""/>
     </div>
-    <p>This is filler content to size up the paragraph. This is filler content to size up the paragraph. This is filler content to size up the paragraph.</p>
+    <p>I don't always design and develop everything myself. But when I do...Ok I pretty much do. However, I am currently seeking and awesome software team to join!</p>
   </div>
 );
 

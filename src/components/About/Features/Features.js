@@ -5,11 +5,11 @@ const Features = () => (
   <ul className="Features">
     <li>
       <h3>Creative</h3>
-      <p>Like a T-Rex, I use my <br/>big head to snack on problems</p>
+      <p>Applications need to look<br/>as good as they work</p>
     </li>
     <li>
       <h3>Dynamic</h3>
-      <p>Shapes, Colors, and <br/>Transitions...Oh My!</p>
+      <p>User engagement is <br/>my top priority</p>
     </li>
     <li>
       <h3>Responsive</h3>
@@ -17,7 +17,7 @@ const Features = () => (
     </li>
     <li>
       <h3>Agile</h3>
-      <p>Whipping up layouts quicker <br/>than your favorite barista</p>
+      <p>Rapid prototyping <br/>& high performance</p>
     </li>
   </ul>
 );

@@ -184,6 +184,7 @@
 .Bio > p {
   position: relative;
   max-width: 80%;
+  line-height: 2.5rem;
 }
 
 @media (max-width: 991px) {
