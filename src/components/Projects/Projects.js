@@ -19,6 +19,7 @@ export default class Projects extends React.Component {
       <section className="Projects" id="projects">
         <div className="Projects-header header">
           <h1>Projects</h1>
+          <h3>Under Construction</h3>
         </div>
         <div className="Projects-filter">
           <ul>
@@ -40,6 +41,7 @@ export default class Projects extends React.Component {
           this.state.projects === "react" &&
           <div className="ReactProjects">
             <h1>ReactProjects</h1>
+            <a target="_blank" href="https://mobile-merchant.netlify.com/">Mobile Merchant</a>
           </div>
         }
         {
