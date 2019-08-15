@@ -3,9 +3,10 @@ import './Blog.css';
 import { ReactComponent as Shape } from './shape-pink.svg';
 import blogLink from './blog-link.png';
 import blogbars from './blog-bars.png';
+import Construction from '../Construction/Construction';
 
 const Blog = () => (
-  <div className="Blog" id="blog">
+  <section className="Blog" id="blog">
     <div className="Blog-header header">
       <Shape className="Blog-shape"></Shape>
       <h1>Blog</h1>
@@ -92,7 +93,8 @@ const Blog = () => (
         </div>
       </div>
     </div>
-  </div>
+    <Construction />
+  </section>
 );
 
 export default Blog;

@@ -12,6 +12,12 @@
   padding: var(--large);
 }
 
+.Features li i {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: var(--turqDark);
+}
+
 .Features li h3 {
   color: var(--turq);
   font-size: var(--large);

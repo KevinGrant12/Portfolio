@@ -1,0 +1,56 @@
+.Development {
+  background: black;
+}
+.Development-header h1 {
+  color: white;
+}
+.Development h3 {
+  color: white;
+  font-size: 2rem;
+}
+.Development a {
+  color: white;
+  font-size: var(--xlarge);
+  margin-bottom: 4rem;
+  display: block;
+}
+.Development a:hover {
+  color: var(--turq);
+}
+
+/* Temp Projects */
+.tempProjects {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 4rem auto;
+}
+.tempProject {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.tempProject img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+}
+.tempProject h3 {
+  margin-bottom: 0;
+}
+.tempProject p {
+  color: white;
+}
+.tempProject a  {
+  font-size: 1.5rem;
+}
+@media (max-width: 767px) {
+  .tempProjects {
+    flex-flow: column;
+  }
+  .tempProject {
+    width: 100%;
+  }
+}

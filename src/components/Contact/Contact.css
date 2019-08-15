@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 10rem 0;
+  padding: 4rem 0 10rem;
   background: #003C44;
 }
 
@@ -15,4 +15,5 @@
   color: white;
   font-size: var(--medium);
   margin: 0 0 var(--xlarge);
+  font-weight: 400;
 }

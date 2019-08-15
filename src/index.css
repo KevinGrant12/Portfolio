@@ -17,6 +17,7 @@ body {
 
 section {
   overflow: hidden;
+  position: relative;
 }
 
 h1 {

@@ -1,0 +1,21 @@
+.Construction {
+  display: inline-flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 0 0 0 10px;
+  background: var(--pink);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.Construction i {
+  font-size: 2rem;
+  color: white;
+}
+
+.Construction p {
+  font-size: 1rem;
+  color: white;
+}

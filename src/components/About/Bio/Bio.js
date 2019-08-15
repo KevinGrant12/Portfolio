@@ -17,7 +17,7 @@ const Bio = () => (
       </div>
       <img src={portrait} alt=""/>
     </div>
-    <p>I don't always design and develop everything myself. But when I do...Ok I pretty much do. However, I am currently seeking and awesome software team to join!</p>
+    <p>I don't always design and develop everything myself. But when I do...Ok I pretty much do. Clearly, I love to do both and I hope my website speaks for itself. Also, I am currently seeking an awesome team to become a part of so please feel free to contact me!</p>
   </div>
 );
 

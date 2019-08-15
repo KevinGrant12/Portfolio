@@ -9,8 +9,8 @@ export default class Skills extends React.Component {
       html: 80,
       css: 80,
       javascript: 60,
-      react: 50,
-      ui: 50,
+      react: 70,
+      ui: 70,
       illustrator: 80,
       photoshop: 70
     };

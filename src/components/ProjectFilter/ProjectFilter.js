@@ -1,9 +1,7 @@
 import React from 'react';
-import './Projects.css';
-// import { ReactComponent as Shape } from './shape-yellow.svg';
-// <Shape className="About-shape" />
+import './ProjectFilter.css';
 
-export default class Projects extends React.Component {
+export default class ProjectFilter extends React.Component {
   constructor(props) {
     super(props);
 
@@ -16,11 +14,7 @@ export default class Projects extends React.Component {
   };
   render() {
     return(
-      <section className="Projects" id="projects">
-        <div className="Projects-header header">
-          <h1>Projects</h1>
-          <h3>Under Construction</h3>
-        </div>
+      <section className="Projects-filter-wrap">
         <div className="Projects-filter">
           <ul>
             <li>
@@ -32,37 +26,24 @@ export default class Projects extends React.Component {
             <li>
               <button onClick={this.handleClick} value="python"><i className="fab fa-python"></i> Python</button>
             </li>
-            <li>
-              <button onClick={this.handleClick} value="wordpress"><i className="fab fa-wordpress"></i> Wordpress</button>
-            </li>
           </ul>
         </div>
         {
           this.state.projects === "react" &&
           <div className="ReactProjects">
-            <h1>ReactProjects</h1>
-            <a target="_blank" href="https://mobile-merchant.netlify.com/">Mobile Merchant</a>
           </div>
         }
         {
           this.state.projects === "csharp" &&
           <div className="NetProjects">
-            <h1>.NET Projects</h1>
           </div>
         }
         {
           this.state.projects === "python" &&
           <div className="PythonProjects">
-            <h1>PythonProjects</h1>
           </div>
         }
-        {
-          this.state.projects === "wordpress" &&
-          <div className="WordpressProjects">
-            <h1>WordpressProjects</h1>
-          </div>
-        }
-      </section>
+      </section>    
     );
   };
 };

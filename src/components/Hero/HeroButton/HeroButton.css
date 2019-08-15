@@ -48,6 +48,11 @@
   font-size: var(--medium);
   transform: translate(-50%,-50%);
   pointer-events: none;
+  transition: all .3s ease;
+}
+
+.Hero button:hover span {
+  opacity: 0;
 }
 
 .Hero button span i {
