@@ -25,7 +25,7 @@ const Blog = () => (
               <i className="fas fa-heart"></i>
               <p>10</p>
             </span>
-            <a href="#" className="Blog-post_link">
+            <a href="!#" className="Blog-post_link">
               <i className="far fa-arrow-alt-circle-right"></i>
               <img src={blogLink} alt=""/>
             </a>
@@ -45,7 +45,7 @@ const Blog = () => (
               <i className="fas fa-heart"></i>
               <p>10</p>
             </span>
-            <a href="#" className="Blog-post_link">
+            <a href="!#" className="Blog-post_link">
               <i className="far fa-arrow-alt-circle-right"></i>
               <img src={blogLink} alt=""/>
             </a>
@@ -65,7 +65,7 @@ const Blog = () => (
               <i className="fas fa-heart"></i>
               <p>10</p>
             </span>
-            <a href="#" className="Blog-post_link">
+            <a href="!#" className="Blog-post_link">
               <i className="far fa-arrow-alt-circle-right"></i>
               <img src={blogLink} alt=""/>
             </a>
@@ -85,7 +85,7 @@ const Blog = () => (
               <i className="fas fa-heart"></i>
               <p>10</p>
             </span>
-            <a href="#" className="Blog-post_link">
+            <a href="!#" className="Blog-post_link">
               <i className="far fa-arrow-alt-circle-right"></i>
               <img src={blogLink} alt=""/>
             </a>

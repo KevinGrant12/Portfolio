@@ -6,13 +6,13 @@ import Features from './Features/Features';
 import Skills from './Skills/Skills';
 
 const About = () => (
-  <section className="About" id="about">
-    <div className="About-header header">
-      <Shape className="About-shape" />
+  <section className="about" id="about">
+    <div className="about-header header section-header">
+      <Shape className="about-shape" />
       <h1>About</h1>
     </div>
     <Features />
-    <div className="About-child-wrap">
+    <div className="about-child-wrap">
       <Bio />
       <Skills />
     </div>

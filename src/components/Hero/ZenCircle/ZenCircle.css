@@ -12,13 +12,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  opacity: 0.075;
+  opacity: 0.2;
   transition: all .3s ease;
   border-radius: 50%;
 }
 
 .ZenCircle img:hover {
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .ZenCircle img#circleOne {

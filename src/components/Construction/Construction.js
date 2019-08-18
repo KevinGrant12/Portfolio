@@ -4,7 +4,7 @@ import './Construction.css';
 const Construction = () => {
   return(
     <div className="Construction">
-      <i class="fas fa-tools"></i>
+      <i className="fas fa-tools"></i>
       <p>Under <br></br> Construction</p>
     </div>
   );
