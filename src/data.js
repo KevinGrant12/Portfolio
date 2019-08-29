@@ -16,6 +16,7 @@ export default [
       name: "mobile merchant",
       slug: "mobile-merchant",
       type: "development",
+      link: "https://mobile-merchant.netlify.com/",
       tags: ["react"],
       excerpt: "Ecommerce website built to quickly and easily sell niche projects",
       description:
@@ -54,6 +55,7 @@ export default [
       name: "idyll bay",
       slug: "idyll-bay",
       type: "development",
+      link: "",
       tags: ["react"],
       excerpt: "Elegant beach resort complete with room-search & booking",
       description:
@@ -92,6 +94,7 @@ export default [
       name: "blog page",
       slug: "blog-page",
       type: "development",
+      link: "",
       tags: ["react", "test"],
       excerpt: "Personal blog page filled built with Gatsby.js",
       description:

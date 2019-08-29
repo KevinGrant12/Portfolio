@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
-  let { images, name, excerpt, tags } = project;
+  let { images, name, excerpt, tags, link } = project;
   tags = tags.map((tag, index) => {
     console.log({tag})
     return <div className="projectTag" key={index}>{tag}</div>
@@ -16,6 +16,7 @@ const ProjectCard = ({ project }) => {
         <div className="projectTags">
           {tags}
         </div>
+        <a className="projectLink" href={link} target="_blank"></a>
       </div>
     </article>
   );
